@@ -1,0 +1,52 @@
+As of September 2023,
+
+There are a total of 3 individual structures for 2D.
+Structure 1 - All values
+Structure 2 (L1 = 0)
+Structure 3 (L1 = L3 = 0)
+
+Currently, we have all three structures individually trained and tested on various datasets.
+To reduce computational costs, we have reduced the wavelengths to 15%. 
+We used to train the models with only 2 epochs in the past, but now the usual training epoch number is 1000. 
+We have increased the number of hidden layers in the neural network while keeping the shape (kite) the same. 
+Neuron sizes are as follows: 
+6 100 200 400 400 800 800 800 400 400 200 200 100 100 50 20 4.
+
+
+1st combined model
+It is the combination of Structure 1 and Structure 2.
+Total Data Size - 22000 Rows (11K - S1 and 11K - S2)
+
+2nd Combined model
+It is the combination of Structure 1, Structure 2, and Structure 3.
+Total Data Size - 33000 Rows (11K - S1 | 11K - S2 | 11K - S3)
+
+
+We often experiment with:
+
+Number of epochs
+Number of layers
+Number of neurons in each layer
+Ensembling and averaging
+
+
+All the files are uploaded to the Box folder. 
+Each .py file in the folder contains the code for the cloud, and once the model is generated, we can test and visualize the performance using (Test__.ipynb files). 
+I am uploading samples of both files on GitHub for future reference. 
+Data Sweep is the file used when we want to generate data size vs. loss box plots. 
+The "Rest" folder contains all the worst-performing models on 2 epochs. 
+The main crux of the project can be found in the "2_1000 Epochs" folder. 
+There is no need to retrain already trained models, as the history has been saved in each subfolder, and testing can be started directly.
+
+
+
+
+Feel free to reach out to me.
+
+Smit Patel
++1 581 349 3131
+spate314@uottawa.ca
+
+
+
+
